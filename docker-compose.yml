@@ -1,0 +1,8 @@
+services:
+  latex:
+    image: ghcr.io/etycomputer/latex-docker-slim:latest
+    container_name: latex-builder
+    volumes:
+      - ./:/workdir
+    # Tells latexmk to generate files in the 'outputs' directory
+    command: ["latexmk", "-pdf", "-outdir=outputs", "example-cv.tex"]

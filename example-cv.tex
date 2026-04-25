@@ -1,0 +1,47 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[scale=0.8]{geometry}
+
+\name{Alex}{Smith}
+\title{Solution Architect}
+\address{123 Innovation Drive}{Tech City}{Country}
+\phone[mobile]{+0~(000)~000~0000}
+\email{alex.smith@example.com}
+\social[linkedin]{alexsmith-anon}
+
+\begin{document}
+\makecvtitle
+
+\section{Experience}
+\cventry{2023 -- Present}{Solution Architect}{Cloud Systems Inc.}{Metropolis}{}{
+  \begin{itemize}
+    \item Designed and deployed secure, scalable cloud-native applications for enterprise clients.
+    \item Spearheaded the migration of legacy on-premise systems to modern AWS infrastructure.
+    \item Mentored junior developers and established CI/CD best practices across multiple teams.
+  \end{itemize}
+}
+\cventry{2018 -- 2023}{Senior Software Engineer}{DataWorks Corp}{Metropolis}{}{
+  \begin{itemize}
+    \item Managed a multidisciplinary team of 8 engineers delivering real-time monitoring solutions.
+    \item Implemented robust automated testing pipelines, reducing production bugs by 40\%.
+    \item Engineered high-throughput data integration pipelines using Apache Kafka and Go.
+  \end{itemize}
+}
+
+\section{Education}
+\cventry{2014 -- 2018}{Bachelor of Science in Software Engineering}{Tech University}{Metropolis}{}{First Class Honours}
+
+\section{Skills}
+\cvitem{Languages}{Python, Go, C++, TypeScript, SQL}
+\cvitem{Cloud \& Tools}{AWS, Docker, Kubernetes, Terraform, Git, CI/CD, Linux}
+
+\vspace{1em}
+\renewcommand{\refname}{Selected Publications}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}
+
+\end{document}

@@ -32,3 +32,16 @@ To get started, pull the latest image directly from the GitHub Container Registr
 ```bash
 docker pull ghcr.io/etycomputer/latex-docker-slim:latest
 ```
+
+## 💻 Locally Compiling LaTeX
+To use this image to build your LaTeX documents locally, use the docker compose file provided in the repository and run the following command:
+
+```bash
+docker compose up
+```
+
+This will automatically spin up the container, compile the document using `latexmk` (which resolves all cross-references and bibliographies), output the resulting PDF, and cleanly exit.
+
+## Example Project:
+This repository includes a sample `example-cv.tex` and `publications.bib` file so you can test the compiler immediately. By default, the `docker-compose.yml` is configured to build `example-cv.tex`.
+
